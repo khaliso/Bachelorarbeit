@@ -1,0 +1,472 @@
+\documentclass[12pt,oneside]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   Zusaetzliche Pakete  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{acronym}
+\usepackage{enumerate}  
+\usepackage{a4wide}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{palatino}
+\usepackage{blindtext}
+\usepackage{multirow}
+
+%folgende Zeile auskommentieren für englische Arbeiten
+\usepackage[ngerman]{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[bookmarks]{hyperref}
+\usepackage[justification=centering]{caption}
+\usepackage[style=chicago-authordate,natbib=true,backend=biber]{biblatex}
+\usepackage{csquotes}
+\bibliography{literatur}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Definition der Kopfzeile %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage}
+\setlength{\headheight}{16pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Definition des Deckblattes und der Titelseite  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\JMUTitle}[9]{
+
+  \thispagestyle{empty}
+  \vspace*{\stretch{1}}
+  {\parindent0cm
+  \rule{\linewidth}{.7ex}}
+  \begin{flushright}
+    \vspace*{\stretch{1}}
+    \sffamily\bfseries\Huge
+    #1\\
+    \vspace*{\stretch{1}}
+    \sffamily\bfseries\large
+    #2
+    \vspace*{\stretch{1}}
+  \end{flushright}
+  \rule{\linewidth}{.7ex}
+
+  \vspace*{\stretch{1}}
+  \begin{center}
+    \includegraphics[width=2in]{Unisiegel.png} \\
+    \vspace*{\stretch{1}}
+    \Large Bachelorarbeit  \\
+
+    \vspace*{\stretch{2}}
+   \large Lehrstuhl f\"{u}r Informationswissenschaft\\
+    \large Universität Regensburg\\
+    \vspace*{\stretch{1}}
+    \large Betreuer:  #7 \\[1mm]
+    
+    \vspace*{\stretch{1}}
+    \large Regensburg, den #6
+  \end{center}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Beginn des Dokuments  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+  \JMUTitle
+      {Untersuchung von Informationslücken im Integrationsprozess von Geflüchteten in Deutschland}        % Titel der Arbeit
+      {MAXIMILIAN SCHMIDHUBER}                  % Vor- und Nachname des Autors
+      
+      {Fakultät für Sprach-, Literatur- und Kulturwissenschaften}  % Name der Fakultaet
+      {Regensburg 2019}                          % Ort und Jahr der Erstellung
+      {24.05.2019}                              % Tag der Abgabe
+      {Prof. Dr. David Elsweiler}               % Name des Erstgutachters
+      {Prof. Dr. Bernd Ludwig}                  % Name des Zweitgutachters
+      
+  \clearpage
+
+\lhead{}
+\pagenumbering{Roman} 
+    \setcounter{page}{1}
+
+\tableofcontents
+\clearpage
+
+\addcontentsline{toc}{section}{\listfigurename}
+\listoffigures
+
+\addcontentsline{toc}{section}{\listtablename}
+\listoftables
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Kurzzusammenfassung   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\markboth{Abstract}{Abstract}
+\section*{Abstract}
+
+\blindtext
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Einstellungen  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+\pagenumbering{arabic}  
+    \setcounter{page}{1}
+\lhead{\nouppercase{\leftmark}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Hauptteil  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Einleitung} \label{einleitung}
+
+10\% der Arbeit
+
+\statement{Was?}
+
+Oduntan und Ruthven stellten im Informationsprozess von Gefl\"uchteten im Asylauswahlverfahrensprozess des Vereinigten K\"onigreichs L\"ucken fest. \cite{oduntan2017investigating}
+Mittels semi-strukturierter Interviews nach Dervin's Sense-making Methodology\cite{dervin2003sense} erfolgte eine Zusammenstellung verschiedener Situationen, in denen diese im Rahmen der Studie auftraten - mit dem Hinweis auf die Existenz noch unergr\"undeter Situationen in der Gefl\"uchtetenintegration.\newline
+Informationsl\"ucken treten gem\"a\ss{} Derwin aufgrund Abweichungen in Zeit (Ich heute vs. Ich gestern) und Raum (Erfahrung aus dem Blickwinkel verschiedener Kulturen, Werte etc.) auf.\cite{dervin2003sense}\newline
+Das Konzept dieser Arbeit ist es, festzustellen, ob auch bei Gefl\"uchteten in Deutschland Informationsl\"ucken w\"ahrend des Integrationsprozesses festzustellen sind.\newline
+Die Untersuchung findet im Jahr 2019 statt, in der Folgezeit einer Fl\"uchtlingskrise, welche Europa ab 2015 direkt betraf. \cite{unhcr2015seven}\newline
+Hierzu soll das Informationsverhalten von Gefl\"uchteten untersucht werden, um sowohl \"offentliche als auch private Informationsbed\"urfnisse in der deutschen Fl\"uchtlingsintegration festzustellen. Anschlie\ss{}end k\"onnen die zust\"andigen Beh\"orden \"uber eventuelle Unzul\"anglichkeiten informiert werden.
+
+\statement{Warum?}
+
+
+Ende 2017 waren weltweit 68,5 Millionen Menschen auf der Flucht. Darunter sind Menschen zusammengefasst, welche als interne Vertriebene, Gefl\"uchtete oder Asylsuchende verzeichnet sind. Dies ist die h\"ochste Zahl, die jemals von UNHCR verzeichnet wurde.\cite{uno2018flucht}
+Die neuesten Zahlen vom Juni 2018 zeigen keine Ver\"anderung. \cite{uno2018flucht}
+Das IPCC geht davon aus, dass sich diese Entwicklung in der n\"aheren Zukunft nicht ver\"andern wird. \cite{sr15ipcc}\newline
+Die Zahl der Asylantr\"age in Deutschland ging allerdings von 2016 bis 2018 von 745.545 \"uber 222.683 auf 185.853 zur\"uck. \cite{statistica2019asyl} In der T\"urkei befinden sich (Stand: 2018) 3.5 Millionen Gefl\"uchtete.\newline
+\newline
+Momentan gibt es Grund zur Annahmne, dass Asylsuchende oft nicht ausreichend auf den Integrationsprozess vorbereitet sind. \cite{oduntan2017information} \cite{gillespie2016mapping}\newline
+Das Informationsverhalten von Randgruppen unterscheidet sich oft signifikant von dem der Be- v\"olkerungsmehrheit. \cite{chatman1996impoverished}
+Durch einen Mangel an relevanten Informationen wird ein Ausschluss aus der Gesellschaft riskiert, in die die Gefl\"uchteten integriert werden sollen. \cite{andrade2016information}\newline
+Als relevant werden in dieser Arbeit alle Informationen gewichtet, die das Leben in der neuen Umgebung beeinflussen - von einem Termin beim \"ortlichen Arzt \"uber Kenntnis der eigenen Rechtslage zur Grundkenntnis der \"ortlichen Kultur und Gesellschaft. \cite{schreieck2017supporting}\newline
+Andrade et al. stellten fest, dass ICT's (Information and communications technology) f\"unf Aspekte der Gefl\"uchteten im Hinblick auf soziale Inklusion positiv beeinflussen:
+\begin{enumerate}
+    \item   Teilnahme an der Gesellschaft
+    \item   Effizientere Kommunikation
+    \item   Das Verst\"andnis der neuen Gesellschaft
+    \item   Pflege sozialer Kontakte
+    \item   Ausdr\"ucken einer eigenen kulturellen Identit\"at
+\end{enumerate}
+Diesbez\"uglich gibt es weitere Ans\"atze:\newline
+Schreieck et al. etwa schufen ein Design f\"ur mobile Applikationen, das an verschiedene Kulturkreise angepasst werden kann. \cite{schreieck2017supporting}\newline
+
+%Schreieck: To derive design principles, we applied a Design Science Research approach based on a requirements analysis via a survey among refugees. Subsequently, the mobile application’s design is iteratively improved based on the results of three user studies with 127 participants of Arabic, African, and Western background.
+
+Jones et al. arbeiteten an einem anderen Ansatz: Sie kreierten ein Zuweisungssystem, in dem Gefl\"uchtete und entweder Staaten oder lokale Areale aneinander verwiesen wurden. Hierbei m\"ussen beide Parteien einer Zuweisung zustimmen. \cite{jones2017matching}\newline
+Um Projekte wie diese zu verbessern, muss auch erschlossen werden, welche Informationsbed\"urfnisse die jeweiligen Zielgruppen erwarten.\newline
+Im Rahmen der sogenannten Fl\"uchtlingskrise wurden in den Aufnahmezentren vom {Bundesamt f\"ur Migration und Fl\"uchtlinge} (BAMF) zahlreiche Neuanstellungen vorgenommen. Bis zum Mai 2017 wurden gem\"a\ss{} des BAMF 454 dieser Neuanstellungen nicht ausreichend trainiert. Dennoch wurde auch dieses Personal damit beauftragt, Asylrechtsentscheidungen zu treffen.\newline
+Die Zahl der Untrainierten wurde bis zum Februar 2018 auf 36 reduziert, 769 der 2139 Angestellten hatten allerdings die Ausbildung noch nicht abgeschlossen.\newline
+Damit gibt diese Situation Grund zur Annahme, dass Asylsuchende nicht ausreichend auf einige der kommenden Herausforderungen vorbereitet wurden. \cite{asylum2018bamf}
+Mittels semi-strukturierter Interviews werden die Erlebnisse der Teilnehmer unter deutscher Jurisdiktion ergr\"undet. Dabei sollen mittels Dervin's sense-making methodology Informationsl\"ucken aufgedeckt werden.\cite{dervin2003sense}\newline
+Mit dieser kann festgestellt werden, wie ein Publikum verschiedene Situationen im Lauf des Lebens logisch begr\"undet hat. Um dies zu erm\"oglichen, sind die Probanden eingeladen, Erfahrungen und Schlussfolgerungen mit Hilfe des Forschers so detailliert wie m\"oglich wiederzugeben.\newline
+Gem\"a\ss{} Dervin wird dennoch immer davon ausgegangen, dass eine erstellte Kategorisierung falsch, irrelevant oder f\"ur andere Sitautionen unangemessen sein kann. Um diese zu \"uberpr\"ufen, wird zum Dialog zwischen wissenschaftlichen Institutionen und dem allt\"aglichen Leben aufgerufen.\textit{Diese Arbeit kann Aufschluss auf die Anwendbarkeit der in Oduntan et al.'s Forschung erarbeiteten Kategorien f\"ur den deutschsprachigen Raum geben.}\newline
+Ein Interview, bei dem Sense-Making angewandt wird, kann auf dem Ansatz der micro-moment timeline basieren. Bei dieser werden die Interviewten gebeten, eine pers\"onliche Situation mit Bezug zum Forschungsfokus genau zu beschreiben (In diesem Fall: Eine Situation abrufen, in der eine Informationsl\"ucke Auswirkungen auf das Leben eines Gefl\"uchteten hatte).
+Die von Oduntan et al. festgestellten Kategorien, in denen Informationsl\"ucken geh\"auft auftraten, waren:
+\begin{enumerate}
+    \item Ablauf des Asylverfahrens\newline
+    Auch ein anhaltender Einfluss auf die mentale Gesundheit sowie getroffene Entscheidungen nach der Ablehnung sind hier relevant.
+    \item Juristische Komponente \newline
+    Beispiel: War dem Gefl\"uchteten klar, dass im Fall einer negativen Asylentscheidung Berufung eingelegt werden kann?
+    \item Wohnen \newline
+    Wie viele Wohnungen hat der Proband nach seiner Flucht bewohnt, wie lange im Durchschnitt, aus welchen Gr\"unden erfolgten Umz\"uge? Momentane Zufriedenheit mit der Wohnsituation? Wie wurde die momentane Wohnung entdeckt?
+    \item Bildung \newline
+    beinhaltet Erfahrungen mit dem deutschen Bildungs - und Schulungssystem
+    \item Sozial\newline
+    Wie ist das soziale Umfeld aufgebaut? Wie steht der Proband in Beziehung zu verschiedenen Demographischen Gruppen?
+    \item Medizinisch\newline
+    ist ein potentiell empfindlicher Bereich, welcher mit Vorsicht bearbeitet werden sollte. Nur situational abfragbar.
+    \item Informationsquellen\newline
+    Welche Informationskan\"ale werden von den Probanden verwendet, um sich zu orientieren und offene Fragen zu beantworten?
+\end{enumerate}
+Besagte Situation wird in Time-Line steps beschrieben, d.h. was passierte als erstes, zweites, etc. Innerhalb eines Schrittes wird behandelt, welche Fragen sich zu diesem Zeitpunkt bildeten, welche Gedanken und Gef\"uhle den Probanden zu dem Zeitpunkt bewegten.\newline
+Hierbei ist die Sense-making Metapher zu ber\"ucksichtigen, mit Hinblick auf Situation, Informationsl\"ucke, Br\"ucke und Resultat.\cite{dervin2003sense}\newline
+Dies f\"uhrt zu weiteren Fragen:\newline
+\begin{enumerate}
+    \item Was f\"uhrte zu dieser Frage?
+    \item Was hat Sie mit deinem Leben zu tun?
+    \item Gesellschaft und Machtverh\"altnisse?
+    \item Wurde die Frage beantwortet?
+    \item Wie?
+    \item Welche Hindernisse gab es?
+    \item War die Antwort hilfreich?
+    \item War die Antwort hinderlich?
+    \item Auf welche Weise?
+\end{enumerate}
+\newline
+Bei der Auswertung der Daten werden die Interviews zun\"achst transkribiert. In Oduntan et al.'s Arbeit wurden die Daten anschlie\ss{}end thematisch analysiert und die Erfahrungen auf Gemeinsamkeiten und Unterschiede \"uberpr\"uft. Mittels dieser Vorgehensweise konnten Verbindungen zwischen individuellen und situationellen Faktoren festgestellt werden, womit Informationsl\"ucken in den Erfahrungen ausgemacht werden konnten. Die verschiedenen Kategorien und Themenbereiche wurden gekennzeichnet.\cite{oduntan2017investigating} Diese Arbeit wird sich an Oduntan et al.'s orientieren.
+
+
+
+\statement{Warum so?}
+
+Ein Gro\ss{}teil der Asylsuchenden in Deutschland stammt aus dem Nahen Osten, etwa die H\"afte der Asylsuchenden im Jahr 2017 wurde in Syrien, dem Irak oder Afghanistan geboren\cite{asylum2017seekers}. Daraus ergeben sich potentielle Probleme, welche voraussichtlich am leichtesten mit Interviews angegriffen werden k\"onnen.
+Zun\"achst ist die Sprachbarriere zu ber\"ucksichtigen: In einem Interview besteht f\"ur den Interviewenden die M\"oglichkeit, eine Frage nach eigener Einsch\"atzung genauer zu erkl\"aren. Bei zu gro\ss{}en Sprachproblemen kann mit einem Dolmetscher oder Sprachassistenzsystem gearbeitet werden.\newline
+Die grundlegende Aufgabe dieser Arbeit ist das Aufdecken von Informationsl\"ucken, ein erkl\"arungs - und redeintensives Unterfangen. Es wird davon ausgegangen, dass die Bed\"urfnisse der Individuen stark variieren. Infolgedessen muss eine potentiell aufgedeckte Informationsl\"ucke durch wiederholtes Nachfragen abgesichert werden, um Missverst\"andnisse zu vermeiden.\newline
+Der semi-strukturierte Ansatz wurde ausgew\"ahlt, um den Gespr\"achsfuss so wenig wie m\"oglich zu unterbrechen und gegebenenfalls das Gespr\"ach zu fokussieren.\newline
+Mit einem Aufbau der Studie auf diese Weise ist die M\"oglichkeit gegeben, einen direkten Vergleich zu Oduntan et al.'s Arbeit und eventuellen weiteren Folgearbeiten aufzubauen.\newline
+Ein anderer Ansatz, etwa ein Fragebogen, ist in dieser Hinsicht nicht Zielf\"uhrend: Dieser ist darauf ausgelegt, f\"ur eine bestimmte Zielpopulation standardisiert werden zu k\"onnen. Dabei werden mehr Informationen vorausgesetzt als derzeit zur Verf\"ugung stehen.\newline
+Die qualitativen Daten, welche mit den Interviews generiert werden, k\"onnen allerdings \"ahnliche Arbeiten in Zukunft unterst\"utzen.\newline
+
+\section{Definitionen}
+
+Informationslücke
+
+Geflüchteter
+refugee:
+Firstly, the key word in the UN convention is “persecution”
+but it has no single definition. Persecutions can be for
+various reasons as defined by the host country and the
+scope of persecutions for each host country keeps
+expanding and evolving with time. Secondly, there are
+numerous routes of arrival into the host country integration
+systems. This is alongside the earlier highlighted categories
+of persons in the integration system. Refugee integration is
+indeed a complicated phenomenon, a situational
+information behaviour approach is the only chance that all
+the variables in the complexity will be factored into the
+understanding.
+
+Asylsuchender
+
+Integration
+Oduntan
+The UN convention is operated in an asylum system in
+which refugees arrive under different elements. The
+systems incorporate varied levels of access to provisions
+including support, benefits, work entitlements and rights to
+remain. Thus refugee integration starts on arrival in the host
+country through the transition process.
+
+\section{Related Work}
+
+
+\section{research design}
+
+\subsection{Informationen über die Teilnehmer}
+
+Demographische Infos
+Fluchtgrund
+Fluchtroute
+Asylstatus
+
+\subsection{Methodik}
+
+\section{Auswertung der Interviews}
+
+Bei der Durchführung der Interviews wurde darauf geachtet, den Interviewten so weit wie möglich die Möglicheit zu geben, über sowohl Zeit als auch Ort der Interviews zu verfügen. Proband 1 (5. bzw 12.04.) entschied sich für ein Kaffee in zentraler Lage (draußen, nur Durchgangsverkehr, Nachbartische nicht besetzt. Neutral, aber dennoch relativ ungestört); das Interview fand im zweiten Anlauf statt.\newline
+Das zweite Interview (23.04.) fand in der Wohnung des Interviewten statt; hier konnte schon im Voraus eine persönliche Beziehung auf Vertrauensbasis aufgebaut werden.
+Interview nummer drei (02. 05.) fand im EJSA - Jugendcafé in Regensburg im Aufenthaltsraum statt; hier kam es öfter zu Störungen, und der Interviewte war in direkter Umgebung eines Freundeskreises. Dieser Ort wurde auf ausdrücklichen Wunsch des Interviewten gewählt.
+Interview Nummer 4 (03.05.) fand in der Wohnung des Probanden statt. Gelegentlich besuchten dessen Mitbewohner das Interview, allerdings ohne zu Unterbrechen. 
+
+In Oduntan's Arbeit wurden Informationslücken bei der Reaktion auf die Ablehnung des Asylbescheids, Gesetzlichen Grundlagen, Wohnen, Bildung, im sozialen Umfeld und den verschiedenen Informationsquellen gefunden.\newline
+Da sich Oduntan's Arbeit auf abgelehnte Asylgesuche beschränkte, konnte schon früh davon asugegangen werden, dass sich bestimmte Bereiche zwischen Ihrer Arbeit und dieser Testgröße unterscheiden würden.
+
+Bei den Interviews in dieser Arbeit wurden folgende Probleme aufgedeckt:
+
+\subsubsection{Interview 1}
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{More columns.}
+    \label{tab:table1}
+    \begin{tabular}{l|S|r|l}
+      \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3} & \textbf{Value 4}\\ % <-- added & and content for each column
+      $\alpha$ & $\beta$ & $\gamma$ & $\delta$ \\ % <--
+      \hline
+      1 & 1110.1 & a & e\\ % <--
+      2 & 10.1 & b & f\\ % <--
+      3 & 23.113231 & c & g\\ % <--
+    \end{tabular}
+  \end{center}
+\end{table}
+
+Interviewee 1:
+
+Setting: Wo? Umgebung?
+Zeitpunkt: zwischen Tür und Angel?
+
+4 Aspekte einer Nachricht: Fokus auf Inhalts - und Selbstoffenbarungsebene, weniger Beziehung
+
+Treffpunkt und ZEitpunkt von den Interviewees selbst bestimmen lassen
+
+
+3 1/2 jahre in Deutschland.
+23, männlich
+asylstatus: anerkannt
+Bildungsgrad: Akademischer Abschluss in Syrien
+Fluchtroute: Boot
+Syrien
+Grund für Deutschland: Raus aus Syrien, wurde in Passaua uf dem Weg in die Niederlande von der Polizei angehalten.
+Sozial: breites Netzwerk an Freunden, auch Deutsche (allerdings eher ältere, bei jüngeren Trinkkultur Problemfaktor).
+
+Hat 'immer noch eine Lücke': Kultur und Tradition in Syrien komplett anders als in Deutschland.
+Job: Nachbar ist Besitzer einer Bar, kam so an Türsteher - Job.
+Ausbildung zum Pharmazeutisch - technischen Assistenten, da Pharmazie/Chemie - Studium nicht anerkannt.
+Mentale Stressfaktoren:
+Ein Kontaktverlust vor etwa 6 Monaten zum Zeitpunkt des Interviews zu den Eltern (kriegszeug eben)
+
+Dem Probanden war nach eigener Angabe klar, dass im Falle eines negativen Asylbescheids Revision eingelegt werden kann.
+
+'[..] wenn ich dort bleibe, dann muss ich die Waffe tragen.'
+
+Reise nach Europa: 'einfach' über die Grenze zur Türkei bei Aleppo, dann 2, 3 tage in der Türkei gelebt, dann einen Schleuser bezahlt und getroffen. Dann Übersetzen nach griechenland. Boot mit 6m Länge, 46 personen, mit Elektromotor. (Anderer interviewee: 6x4m, 60Menschen -> Klassenunterschiede?)
+Übersetzen 2 1/2 Stunden gedauert
+polizei bringt Ihn und sene beiden Brüder von einer Grenze zur nächsten. 
+
+
+Probleme: 
+    Deutschland hat Trinkkultur um Alkohol -> Schwieriger für nicht - Konsumenten, sich zu integrieren. Syrien hat das nicht, feiern ohne Alkohol im Normalfall.
+    Auch der Konsum von Schweinefleisch wurde am Frande angemerkt, jedoch nicht mit der selben Gewichtung wie die zum Alkohol.
+    
+    Ein weiteres Problem in diesem Kontext ist die Sprachbarriere der relativ frisch angekommenen, die Probleme dabei aufweisen, sich in solchen Situationen zu rechtfertigen
+    Sprachbarriere zweistufig: Jemand, der Deutsch kann, mag dennoch noch lange nicht mit der bayrischen Sprache zurecht kommen.
+    
+    Anderes sozialsystem Deutschland VS syrien: 
+        D: Unterscheidung zwischen Kollegen, Bekannte, Freunden.
+        S: Alles Freunde.
+        
+    Bildung: Anderes Schulsystem in Syrien: französisches Schulsystem, welches nach der Einschätzung des Interviewten den Lehrkörper in die Verantwortung nimmt, dem Schüler 75\% des Stoffs im Rahmen des Lehrplans beizubringen. In Bayern kam die Sprachbarriere hinzu: Die Lehrkraft sprach nur mit bayrischem Dialekt, dies führte zu Informationslücken. Der Aufforderung, sich bei Unverständnis des bearbeiteten Stoffs immer zu melden, nahm der Interviewte aus Angst vor weiterer sozialer Ausgrenzung nur in seltenen Fällen wahr.\newline
+    In dieser Ausbildungsklasse befanden sich 18 deutsche und 4 ausländer; 20 Schüler waren weiblich und 2 männlich.
+%Fluchtgrund: Festnahme und Erzwingen eines falschen GEständnisses (nur unterschreiben, nicht lesen) durch Polizeigewalt, 'Wenn wir euch auf dieser Straße wieder sehen sperren wir euch länger weg'
+%               Anklagepunkte: Sexuelle Übergriffe, Störung der Anwohner, Sachbeschädigung, ..
+% Anderer Grund: Installieren eines (fachlich unkundigen) regimetreuen Fakultätsrats, welcher potentielle Regimegegner ausmachen soll. Junge Menschen sollen in die Armee, nicht an die Uni -> Professoren teilen Ansicht.
+%Demo an der Uni gegen das Regime wurde u.a. von Panzern zerschlagen
+%Demonstranten verschwinden, werden gefoltert und teilweise erst in Leichensäcken an die Familien zurück übergeben.
+%Polizei stellt Schläger in Ihren Dienst und ist Blind betreffend der Verbrechen, die diese begehen (Messern eines Oppositionellen vor einer Moschee)
+
+
+
+B: Aber so üblich oder so, so groß wie hier in Deutschland, das habe ich nicht erlebt. Aber mir ist(...)ALso mir interessiert überhaupt nicht ob jemand trinkt oder nicht oder sowas. #00:06:38-2#
+
+B: Mich interessiert einfach, dass jemand zu mir kommt und sagt: Warum? #00:06:42-2#
+
+I: hm? #00:06:45-0#
+
+B: Also warum(...)wir trinken schon, warum trinkst du nicht? Ich sag's ganz ehrlich du hast ja, also.. (unv.) Die Antwort kommt sofort: Du bist hier in Bayern. Du musst trinken! #00:06:58-0#
+
+B: Du musst Schwein essen! #00:06:57-9#
+
+B: Hää? Was hat das mit Integration zu tun? #00:07:06-9#
+
+I: //(lacht) Passiert dir das öfter? #00:07:07-0#
+
+B: Ja also für mich ist viele Geschichten entgegen also (unv.) am Anfang der (...)ja..(...) Am Anfang, so 2016, 2017.. #00:07:17-9#
+
+B: ..War das für mich schon so hart, weil ich einfach nicht verstanden hab, weil mein Deutsch ist ganz schlecht, und deswegen ich habe nicht ganz (...) nicht alles verstanden #00:07:31-8#
+
+I: hm (bejahend) #00:07:31-8#
+
+B: Und (...) Und ich kann nicht antworten. #00:07:33-9#
+
+I: Ja.. #00:07:33-9#
+
+B: Also das ist die, die, die.. also, jetzt hab ich schon meine Gründe und warum antworte ich überhaupt nicht. Jetzt kann ich einfach so meine Taten dann begründen. Warum mache ich das? Warum mache ich das? #00:07:47-9#
+
+
+
+\subsection{Interview 2}
+
+
+Setting: Wo? Umgebung?
+
+D
+
+Zeitpunkt: zwischen Tür und Angel?
+
+4 Aspekte einer Nachricht: Fokus auf Inhalts - und Selbstoffenbarungsebene, weniger Beziehung
+
+Treffpunkt und ZEitpunkt von den Interviewees selbst bestimmen lassen
+
+19, männlich
+Afghanistan
+Schiite
+Bildung: keine Bildung bis zur Ankunft in Deutschland, lernte auch die Schrift seiner Heimat in Deutschland
+Muttersprache Dari, kann auch Persisch. (Sind wie Bayrisch zu Deutsch)
+
+
+Grund zur Flucht: Aber mein Mama hat gesagt: 'Du musst gehen. Deshalb du kannst kein andere Wahl jetz, wenn du beim zweiten Mal (...) beim zweiten Mal verhaftet wirst, dann (...) kriegst du echt (...) zwei, vielleicht zwei oder drei Jahre im Gefängnisstrafen, also Schlagstrafen und Strafen Geld #00:06:36-3#
+
+
+Flucht über Pakistan in den Iran, dann Iran in die Türkei. Dort mit einem Schlepper nach Griechenland übergesetzt. Griechenland nach Ungarn zu Fuß; auf der Route wurden die GEflücheten von Hilfsklräften mit Lebensmitteln versorgt. Ungarn nach Deutschland mit dem Zug
+
+Wohnen: Alle bisher bezogenen Wohnungen wurden von den örtlichen Hilfsorganisationen gestellt. Der damals zuständige Vormund und die Betreuer der Wohngruppe halfen beim Aussuchen der Wohnung.\newline
+Die erste Wohnung wurde aus medizinischen Gründen verlassen; alle Zimmer waren auf zwei Bewohner ausgelegt. Der Proband leidet an schwerer Migräne und hätte daraus resultierend ein Einzelzimmer benötigt, welches in diesem Wohnsystem jedoch nicht vorgesehen war. Deshalb wurde er an das Wohnprogramm einer anderen Sozialorganisation verwiesen (min29).
+
+Medizinisch:
+In der ersten bezogenen Wohnung gab es gemäß der Aussage des INterviewees wenige Betreuer, jedoch wurde er noch von seinem Vormund individuell betreut. Die Bewohner der Gruppe wurden zur Selbstständigkeit angehalten, i.e. selbstständige Besuche beim Arzt(min28)
+Problem: Kein Übersetzer beim Arztbesuch; Kommunikation 'Mit Händen und Füßen' (min28). Führte zu Missverständnissen.
+Rekonstruktion eines Arztbesuches:
+Der Interviewte machte sich auf den Weg zum Arzt (Ob geschickt oder aus eigenem Antrieb unklar), ohne über suffiziente Deutschenntnisse oder einen Dolmetscher zu verfügen. Betreuer brachten Ihm allerdings einen Satz bei, um sein Leiden zu beschreiben. Bsp.: "Mir ist schlecht"(min29). Die Nachfrage des Arztes nach "wo?" wurde bereits nichtmehr verstanden (min29); Resultierte in einer potentiell Missverständlichen 'Konversation' mit Händen und Füßen.\newline
+Weiteres: Der Interviewee leidet (vermutlich genetisch bedingt) an schwerer Migräne und konsumierte schon seit Kinder/Jugendtagen Schmerzmittel (min29). Im Tagesbetrieb der ersten Wohngruppe bekam er jeweils eine Tablette Schmerzmittel vor dem Schlafen gehen.\newline
+Als dieser Betreuer jedoch über einen längeren Zeitraum frei hatte, versorgte er den Betreuten mit 20 Tabletten des Schmerzmittels, um Ihn bis zu seiner Rückkehr zu versorgen (Ob ein Ersatzbetreuer für die Wohngruppe zuständig war oder das Aushändigen mit Anweisungen des Betreuers verbunden war hab ich vergessen zu fragen.)\newline
+Der zu diesem Zeitpunkt 16-jährige nahm bei einem Migrändeanfall an einem Abend drei Tabletten besagten Schmerzmittels, dann 'B: ähm mir war schwindlig, dann ich (...) mir war schwindlig, dann ich bin einfach auf dem Bett gelegen und geschlafen bis nächstes Tag.  #00:29:28-7#\newline
+Tags darauf hatte der interviewte einen Arzttermin, welcher nach einem kurzen Gespräch feststellte, dass binnen sieben Tagen ein Großteil der 20 Tabletten ohne Regulation konsummiert wurde. Daraufhin kontaktierte dieser den Vormund des Betreuten, besagte Betreuung der Wohngruppe, Heimleitung, das Jugendamt, einen Dolmetscher und andere zuständige Stellen.\newline
+Der Interviewte erklärte den Anwesenden, dass die Kombination des schnarchenden Mitbewohners mit seiner schweren Migräne der Auslöser für sein Verhalten gewesen seien; 
+
+Nach eigener Aussage war Ihm zu diesem Zeitpunkt der Zusammenhang zwischen Gesundheitlichen Schäden und Tablettenkonsum nicht bekannt. (mehr dazu ab min42)
+
+
+Informationslücke: Konsum von Medikamenten. Bildungsbedingt?
+
+Aufgrund schwerer traumatischer Erlebnisse auf der Fluchtroute: 'Wenn ich nach Afghanistan abgeschoben wieder abgeschoben werde, ich werde nie wieder nach Deutschland kommen. Ich will die wieder diese Grenze sehen. Das war furchtbar. Ich will dort hungrig bleiben, nicht sterben, aber nicht wieder (...) solche Grenze sehen. 
+Boot: min 12
+
+Ankunft in Regensburg am 19.09.2015 (so genau angeben?), der Sprachkurs Deutsch begann Tags darauf.
+
+Ausländer im Iran stehen häufig vor dem Risiko, verhaftet und abgeschoben zu werden. Sie verfügen über keine gültigen Papiere und sind dementsprechend  zur Arbeit im informellen Sektor gezwungen.
+
+Der Bruder des interviewten wurde, wie der Interviewte selbst, von der iransichen Regierung angehalten, in Syrien zu kämpfen. Dies hätte gemäß deren Aussage zu einer Bleibeerlaubnis (incl Pass) für Ihn und Seine Familie sowie der Bereitstellung monetärer Mittel geführt.
+Der Kampf in Syrien gegen den IS wird gemäß der Aussage des Interviewten von den Schiiten als würdevoll gesehen, weshalb viele dazu geneigt sind, sich diesem anzuschließen. Andere wurden gezwungen.(min15)
+
+Der Vater des Interviewten wurde gemäß eigener Aussage von den Taliban 'geschlachtet', als dieser fünf Jahre alt war.(min17): Und bei meiner Familie, meine Bruder Beispiel sollte hingehen. Aber der hat nicht (...) meine Mama hat nicht akzeptiert. Meine Mama hat gesagt: 'Ich hab einmal eure Vater gesehen, wie Taliban hat geschlachtet. Ich will nicht meine Kinder so sehen. (...) Und meine Mama hat gesagt, ich hatte solche Scheiße erfahrung, ich will nicht wieder diese Erfahrung 
+
+Kontakt zur Familie: Kontakt vor einem Jahr, dann Brief v. Iran an Familie (min 15) -> abhören. (min15), min18. 
+Letzter Informationsstand zur Mutter im Iran vor vier Monaten (über Telefon der Nachbarin, min19/20); der Interviewte zeigte sich sichtlich bedrückt von einer Flut, welche zum Zeitpunkt des Interviews im Iran und Afghanistan viele Menschenleben forderte.
+
+Kontakte in Deutschland: EJSA - Jugendcafé, Campus Asyl, Betreuer der WG, Ehrenamtliche Nachhilfelehrer. Kein Kontakt mehr zum ehem. Vormund
+
+Bildung: Keine Vorbildung in Afghanistan oder dem Iran; der Interviewte lernte sowohl die lateinische als auch arabische Schrift in Deutschland.
+
+Bayrischer Dialekt wurde nicht als Problem und dem Lernprozess hinderlich angesehen. (Wurde als freundlich und respektvoll wahrgenommen. min24/25)
+
+Informationskanäle: Internet, Telefon
+
+Asylstatus: Aufenthaltserlaubnis (bis Dez.)
+
+Interviewee war zum Zeitpunkt der Ankunft in Deutschland nicht volljährig; ein Vormund kümmerte sich deshalb um alle Anfänglichen Aufgaben(min27).
+
+Wie viel über die persönlichen Umstände des Interviewten erzählen? -> Vertraut dennoch in den deutschen Staat
+Auf der Flucht: Türkische Polizei hat den ertrinkenden eines gekenterten Bootes auf der Fluchtroute meim Ertrinken zugeschaut, (min 12) dennoch Vertrauen in deutsches Rechtssystem
+
+Versäumnisse im interview: min25, Aber (...) Mein Chef war nicht gut. (...).
+                -> potentielles follow-up.
+
+\section{Diskussion der Ergebnisse}
+
+\section{Fazit und Ausblick}
+
+10\% der Arbeit
+
+\clearpage
+\lhead{}
+\printbibliography
+\addcontentsline{toc}{section}{\bibname}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Eidesstattliche Erklärung
+%% muss angepasst werden 
+%% in Erklaerung.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Erklaerung.tex}
+
+\end{document}
