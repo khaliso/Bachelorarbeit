@@ -12,6 +12,7 @@
 \usepackage{csquotes}
 \usepackage{blindtext}
 \usepackage{multirow}
+\usepackage[final]{pdfpages}
 \usepackage[toc]{appendix}
 
 %folgende Zeile auskommentieren für englische Arbeiten
@@ -130,102 +131,31 @@
 
 10\% der Arbeit
 
-\include{Exposee.tex}
+\input{Exposee.tex}
 
-\section{Related Work}
+
+%Theoretische Rahmenbedingungen
+\input{Related_work.tex}
 
 -> was für information needs wurden in der normalen Literatur aufgedeckt?
 
-Wie bereits von \cite{oduntan2017investigating} festgestellt wurde, ..
-
-The identified information needs of general migrant
-include: social, cultural knowledge and skill-based
-knowledge (Fisher, Durrance, & Hinton, 2004); health
-insurance, emergency care, vaccinations, dental, preventive
-care, pregnancy, what to expect from health services,
-school enrolment, housing and employment (Courtright,
-2005). Silvio (2006) identified academic, apprenticeship,
-health, employment, political and how to deal with
-discrimination and Shoham & Strauss (2008) identified
-housing, schooling, health, driving, banking, legal issues,
-work and language. Lingel (2011) identified information
-need around neighborhood, grocery shopping, local routes,
-libraries and hospitals. These studies also identified a broad
-range of information sources that included family and
-friends (Shoham & Strauss, 2008) and social networks such
-as ball parks, bike shops, day care centers, church, barber
-shops, hair salons and garage (Fisher et al., 2004).
-
-However, these information needs are at an individual-level
-and are set within certain specific confined instances.
-Individual-level information needs isolate the studied from
-either others in a process and surrounding contextual factors
-of situations. For instance, Fisher et al. (2004) studied the
-use of library programs by the Queens Borough public
-library and Courtright (2005) studied health information
-seeking investigation of Latino newcomers to Southern
-Indiana in the United States. Similarly, Shoham & Strauss
-(2008) investigated the information needs of new
-immigrants’ families from North America to Israel and
-Lingel (2011) studied new immigrants at an international
-center.
-The refugee specific studies includes the work of Lloyd,
-Kennan, Thompson, & Qayyum (2013) that identified
-information needs around everyday living and compliance,
-and Lloyd (2014) that identified health information needs.
-The information sources identified included trusted
-mediators, social networks and visual sources. These
-studies, like the general migrants studies, were individual-
-level and set within confined instances: Lloyd (2014)
-studied African refugees and focused on health while Lloyd
-et al. (2013) studied newly arrived refugees. In this study,
-we examine contextual and individual variables including
-sociological processes in refugee integration for the
-identification of refugee information needs.
-
-Although information needs, sources and seeking behaviour
-have indeed been identified, they do not address the
-processes and procedural dimensions involved. This may be
-attributed to Wilson (1981) observation of “a failure to
-identify with the situations within which information needs
-investigations are carried out”. It is advocated that a holistic
-approach to migrant information studies be adopted,
-encompassing closer examination of theories and principles
-of social inclusion and social capital in addition to
-information behaviour (Caidi, Allard, & Quirke, 2010).
-
-Information behaviour studies being person-centred need
-not only identify individual-level information needs. The
-scope of identified information needs can be broadened. A
-situational approach to information behaviour during
-refugee integration can provide fuller perspectives to help
-understand the relationships between contextual factors and
-human information behaviour in situations which can be
-used in the actual design of services and provision. This is
-because information needs identified from situations put
-any potential person in context.
-
-
-%research design
+%Aufbau der Studie
 
 \input{research_design.tex}
 
-%Auswertung der Interviews
-\include{Bildung.tex}
+\section{Auswertung der Interviews}
+Im Folgenden werden die Befunde der Interviewanalyse näher erläutert. Hierzu wurden die Interviews nach Informationslücken untersucht, welche in die Kategorien \textit{Bildung, Soziales Umfeld, Juristisch} und \textit{Wohnung} untergliedert wurden.Anschließend werden die identifizierten \textit{Informationsquellen} erläutert.
+\input{Bildung.tex}
 
-\include{Sozial.tex}
+\input{Sozial.tex}
 
+\input{Informationsquellen.tex}
 
-\include{Interviews}
+%\include{Interviews}
 
-\section{Diskussion der Ergebnisse}
-(limitations of the data set?) -> hier qualitative Daten. Da auch nötig?
+\input{Diskussion.tex}
 
-neues: auch regionale Dialekte der Sprache haben Auswirkungen auf das Integrationsverhalten.
-
-\section{Fazit und Ausblick}
-
-10\% der Arbeit
+\input{Fazit.tex}
 
 \clearpage
 \lhead{}
@@ -237,10 +167,14 @@ neues: auch regionale Dialekte der Sprache haben Auswirkungen auf das Integratio
 %% muss angepasst werden 
 %% in Erklaerung.tex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \input{Erklaerung.tex}
 
 \newpage
-%\appendix
+\appendix
+\includepdf[pages=-]{Maximilian_Schmidhuber_letter_of_support_ethics.pdf}
+\includepdf[pages=-]{Interviewleitfaden.pdf}
+%\input{Appendix_1.tex}\newpage   <- Überarbeiten, sieht kacke aus
 %\input{Interview_1.1.tex}\newpage
 %\input{Interview_1.2.tex}\newpage
 %\input{Interview_2.1.tex}\newpage
